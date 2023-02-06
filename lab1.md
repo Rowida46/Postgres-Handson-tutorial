@@ -1,3 +1,19 @@
+Create track name as _ENum_ val
+
+```sql
+create type trackName as enum("python", "emmbeded", "net", "ai");
+
+```
+
+0- Create _track_ Table
+
+```SQL
+create table Track(
+id int primary key not null ,
+name trackName);
+```
+---
+
 1- Create table student
 
 ```sql
@@ -73,6 +89,11 @@ create table exam_details(student_id int references student(id), score decimal, 
 create table exam (id int primary key, date date);
 ```
 -----------
+
+_List of created database_
+
+![image](https://user-images.githubusercontent.com/52299389/217061824-d620b257-6e2f-4ebc-9be4-57b5d93a260a.png)
+
 
 # DML Queries
 
