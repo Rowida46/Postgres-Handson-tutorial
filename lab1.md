@@ -72,3 +72,35 @@ create table exam_details(student_id int references student(id), score decimal, 
 ```sql
 create table exam (id int primary key, date date);
 ```
+-----------
+
+# DML Queries
+
+- Insert  Student table.
+
+![Screenshot from 2023-02-06 20-43-17](https://user-images.githubusercontent.com/52299389/217059037-4ae97a61-748d-4c51-8383-8a8c4281d775.png)
+
+
+- Insert  Subject table.
+
+![image](https://user-images.githubusercontent.com/52299389/217059301-c6a85863-31d2-4135-ab95-73c6938c6462.png)
+
+
+- Insert into _Track_ table..
+
+![image](https://user-images.githubusercontent.com/52299389/217059563-f128b3eb-98d7-4e2e-b838-9f5a2bace7f7.png)
+
+- Insert into _track_subjects_ an _student_subject_ tables
+
+![image](https://user-images.githubusercontent.com/52299389/217060119-ea22811a-e92f-4f2d-aec2-69488d4d0008.png)
+
+- Insert into _exam_ table
+
+![image](https://user-images.githubusercontent.com/52299389/217060959-b4abb862-fb5a-434c-bc7a-fc7caafef1c7.png)
+
+- Insert into _exam_details_ table
+
+![image](https://user-images.githubusercontent.com/52299389/217061094-54230819-77d6-4336-8c78-7bbf078018dd.png)
+
+
+
