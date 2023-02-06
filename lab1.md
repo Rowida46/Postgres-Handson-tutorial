@@ -11,11 +11,12 @@ CREATE TABLE student (
         REFERENCES track(id)
 );
 ```
+--- 
 
-2- 
+2- Create Subject table
 
 ```sql
- CREATE TABLE stubject (
+ CREATE TABLE subject (
     id           int PRIMARY KEY not NULL ,
     name         varchar(50) not NULL, 
     description        varchar(100),
@@ -23,25 +24,51 @@ CREATE TABLE student (
 );
 ```
 
+--- 
 
-3- 
+3- _student_phone_ Table
 
 ```sql
-create table student_phone(std_id int not null references student , phone_number varchar(12), primary key(phone_number, std_id));
-CREATE TABLE
+create table student_phone(std_id int not null references student ,
+phone_number varchar(12),
+primary key(phone_number, std_id)
+);
+```
+---
 
+
+4-  _student_subjects_ Table.
+
+```sql 
+create table student_subjects(
+    student_id int  references student(id),
+    subject_id int references subject(id),
+    primary key(student_id, subject_id)
+);
+```
+---
+
+5- _track_subjects_ Table 
+
+```sql
+create table track_subjects(
+    track_id int  references track(id)
+    , subject_id int references subject(id) ,
+    primary key(track_id, subject_id)
+);
+```
+---
+
+6 - _exam_details_ Table.
+
+```sql
+create table exam_details(student_id int references student(id), score decimal, subject_id int references subject(id) , primary key(student_id, subject_id)); 
 ```
 
+---
 
-4- 
+7- _exam_ Table.
+
 ```sql
-create table student_subject(subj_id int ,std_id int, primary key(std_id, subj_id));
-CREATE TABLE
-```
-
-
-5- 
-```sql
-create table track_subjects(subj_id int ,track_id int, primary key(track_id, subj_id));
-CREATE TABLE
+create table exam (id int primary key, date date);
 ```
