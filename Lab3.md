@@ -128,5 +128,32 @@ select TO_CHAR(AGE(now(),birthdate) , 'yy') from student;
 
 ![image](https://user-images.githubusercontent.com/52299389/217246344-3b0a59e8-6a68-47d0-98dd-7232086dcad5.png)
 
+--
 
 
+12- Display the name of students with their Rounded score in each subject
+
+![image](https://user-images.githubusercontent.com/52299389/217250073-47f331fa-660a-46e5-9448-043ccf3d0c23.png)
+
+
+---
+
+
+13- Display the name of students with the year of Birthdate
+
+![image](https://user-images.githubusercontent.com/52299389/217250526-88a783cf-45b1-484a-993f-f7da361f533e.png)
+
+
+14- Add new exam result, in date column use NOW() function;
+![image](https://user-images.githubusercontent.com/52299389/217250774-fc53f611-383d-4e56-aecd-4fbd7df55a33.png)
+
+
+15- Create database called ITI, and create different schema and Tables inside this
+scheme.
+
+_to create a schema_
+```SQL
+CREATE SCHEMA Tracks;
+```
+
+![image](https://user-images.githubusercontent.com/52299389/217251725-4e267758-7de9-41c0-a862-8d9851d69157.png)
